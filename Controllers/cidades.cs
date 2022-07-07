@@ -6,35 +6,29 @@ namespace Test_CRUD_API.Controllers
 {
     [Route("api/[controller]")]
     [ApiController]
-    public class pessoasController : ControllerBase
+    public class cidades : ControllerBase
     {
-        // GET: api/<pessoasController>
-        [HttpGet]
-        public IEnumerable<string> Get()
-        {
-            return new string[] { "value1", "value2" };
-        }
 
-        // GET api/<pessoasController>/5
+        // GET api/<cidades>/5
         [HttpGet("{id}")]
         public string Get(int id)
         {
             return "value";
         }
 
-        // POST api/<pessoasController>
+        // POST api/<cidades>
         [HttpPost]
         public void Post([FromBody] string value)
         {
         }
 
-        // PUT api/<pessoasController>/5
+        // PUT api/<cidades>/5
         [HttpPut("{id}")]
         public void Put(int id, [FromBody] string value)
         {
         }
 
-        // DELETE api/<pessoasController>/5
+        // DELETE api/<cidades>/5
         [HttpDelete("{id}")]
         public void Delete(int id)
         {

@@ -14,5 +14,24 @@ html {
 }
 
 body {
-  margin-bottom: 60px;
+    margin-bottom: 60px;
+    background-color: #41463dff;
+    color: #95f2d9ff;
 }
+
+body * {
+    display:block;
+    margin:20px auto;
+    text-align:center;
+}
+
+/* 
+    
+    SCSS HEX 
+$black-olive: #41463dff;
+$medium-purple: #9d8df1ff;
+$light-steel-blue: #b8cdf8ff;
+$magic-mint: #95f2d9ff;
+$sea-green-crayola: #1cfebaff;
+
+    */

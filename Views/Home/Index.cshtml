@@ -1,8 +1,35 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<h1>Gerenciador de Pessoas e Cidades</h1>
+<form id="seletor" action="#">
+    <label for="actions">Desejo:</label>
+    <select id="actions" name="actions">
+        <option value="consultar">Consultar</option>
+        <option value="criar">Criar</option>
+        <option value="modificar">Modificar</option>
+        <option value="deletar">Deletar</option>
+    </select>
+    <label for="targets">Registro de:</label>
+    <select id="targets" name="targets">
+        <option value="pessoa">Pessoa</option>
+        <option value="cidade">Cidade</option>
+    </select>
+</form>
+<form id="inputData">
+    <div></div>
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+    <label for="campoPessoaNome">Nome:</label>
+        <input type="text" id="campoPessoaNome" />
+    <label for="campoPessoaCPF">CPF:</label>
+        <input type="number" id="campoPessoaCPF" maxlength="11" />
+    <label for="campoPessoaIdade">Idade (anos):</label>
+        <input type="number" id="campoPessoaIdade" maxlength="3" />
+    <label for="campoPessoaCidade">Cidade:</label>
+        <input type="text" id="campoPessoaCidade"/>
+    <label for="campoPessoaUF">UF:</label>
+        <input type="text" id="campoPessoaUF" maxlength="2"/>
+    <input type="submit"/>
+</form>
+<div></div>
+<button>Reset</button>
